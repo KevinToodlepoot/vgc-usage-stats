@@ -1,0 +1,14 @@
+Hi Claude, I'm setting up a fresh repository for loading and parsing usage stats from smogon/pokemon-showdown's official usage stats that they publish. the first thing that I want you to do is look at https://www.smogon.com/stats/ for context. next I want you to do basic setup for the repo: add a gitignore, make sure the license is correct. then we're going to approach this repo as spec driven, meaning we will create a docs/SPEC.md, we will edit that, and then implement by building a plan based on that SPEC.md file. after the basic setup of the repo, push the commit, and then we will work through the SPEC.md file and you will interview me about what the repo should look like. include these questions and any more you deem relevant:
+
+---
+
+Hi Claude, I'm setting up a fresh repository for loading and parsing usage stats from smogon/pokemon-showdown's official usage stats that they publish. the first thing that I want you to do is look at https://www.smogon.com/stats/ for context. next I want you to do basic setup for the repo: add a gitignore, make sure the license is correct. then we're going to approach this repo as spec driven, meaning we will create a docs/SPEC.md, we will edit that, and then implement by building a plan based on that SPEC.md file. after the basic setup of the repo, push the commit, and then we will work through the SPEC.md file and you will interview me about what the repo should look like. include these questions and any more you deem relevant: \ 
+
+<pasted_content id="9951">
+Purpose and consumers: vgc-bot's TypeScript reconstruction tooling and possibly its Python side, plus your own browsing.
+Inputs: which Smogon files, formats, cutoffs, and months.
+Outputs: the spread-level layer, the nature distribution, per-nature and overall stat histograms with percentiles, coverage per nature, and a manifest with checksums and source URLs.
+Schedule: a monthly scheduled job, idempotent, with retries and failure notification.
+Non-goals: no package, no runtime API, no replay crawling, no third-party sites, no effective-stat modifiers (items, abilities, field).
+Acceptance criteria: concrete tests, such as "the parsed spreads for a fixture file match a hand-checked table" and "derived stats match a sample computed with vgc-bot's pinned Dex."
+</pasted_content id="9951">
