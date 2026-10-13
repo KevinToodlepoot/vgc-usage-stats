@@ -1,0 +1,29 @@
+{
+  "name": "vgc-usage-stats",
+  "version": "0.1.0",
+  "description": "Generate a spread-level dataset from Smogon's chaos usage stats for a VGC format.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "bin": {
+    "vgc-usage-stats": "./bin/vgc-usage-stats.js"
+  },
+  "exports": "./src/index.ts",
+  "scripts": {
+    "test": "node --test test/",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test",
+    "postinstall": "cd node_modules/pokemon-showdown && node build"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "pokemon-showdown": "git+https://github.com/smogon/pokemon-showdown.git#9fb3a5b99f1a0bea17f495c5cc1bfe04fdd19c3e"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
