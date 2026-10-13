@@ -1,0 +1,227 @@
+[
+ {
+  "species": "Rillaboom",
+  "spread": "Sassy:32/0/4/0/30/0",
+  "nature": "Sassy",
+  "sp": {
+   "hp": 32,
+   "atk": 0,
+   "def": 4,
+   "spa": 0,
+   "spd": 30,
+   "spe": 0
+  },
+  "weight": 137.73296986567618,
+  "share": 0.37363909479320484
+ },
+ {
+  "species": "Rillaboom",
+  "spread": "Adamant:17/31/0/0/10/8",
+  "nature": "Adamant",
+  "sp": {
+   "hp": 17,
+   "atk": 31,
+   "def": 0,
+   "spa": 0,
+   "spd": 10,
+   "spe": 8
+  },
+  "weight": 97.80384009287901,
+  "share": 0.26532019396112266
+ },
+ {
+  "species": "Rillaboom",
+  "spread": "Adamant:32/25/0/0/0/9",
+  "nature": "Adamant",
+  "sp": {
+   "hp": 32,
+   "atk": 25,
+   "def": 0,
+   "spa": 0,
+   "spd": 0,
+   "spe": 9
+  },
+  "weight": 71.39385052309648,
+  "share": 0.1936757314480796
+ },
+ {
+  "species": "Rillaboom",
+  "spread": "Adamant:26/15/0/0/6/19",
+  "nature": "Adamant",
+  "sp": {
+   "hp": 26,
+   "atk": 15,
+   "def": 0,
+   "spa": 0,
+   "spd": 6,
+   "spe": 19
+  },
+  "weight": 61.6950314896507,
+  "share": 0.16736497979759282
+ },
+ {
+  "species": "Rillaboom",
+  "spread": "Adamant:0/0/0/0/0/3",
+  "nature": "Adamant",
+  "sp": {
+   "hp": 0,
+   "atk": 0,
+   "def": 0,
+   "spa": 0,
+   "spd": 0,
+   "spe": 3
+  },
+  "weight": 0,
+  "share": 0
+ },
+ {
+  "species": "Salamence-Mega",
+  "spread": "Timid:2/0/0/32/0/32",
+  "nature": "Timid",
+  "sp": {
+   "hp": 2,
+   "atk": 0,
+   "def": 0,
+   "spa": 32,
+   "spd": 0,
+   "spe": 32
+  },
+  "weight": 488.44836720408546,
+  "share": 0.6061992224609891
+ },
+ {
+  "species": "Salamence-Mega",
+  "spread": "Timid:1/0/0/32/1/32",
+  "nature": "Timid",
+  "sp": {
+   "hp": 1,
+   "atk": 0,
+   "def": 0,
+   "spa": 32,
+   "spd": 1,
+   "spe": 32
+  },
+  "weight": 215.803772209538,
+  "share": 0.26782785592342984
+ },
+ {
+  "species": "Salamence-Mega",
+  "spread": "Modest:2/0/0/32/0/32",
+  "nature": "Modest",
+  "sp": {
+   "hp": 2,
+   "atk": 0,
+   "def": 0,
+   "spa": 32,
+   "spd": 0,
+   "spe": 32
+  },
+  "weight": 61.829596542540855,
+  "share": 0.07673493426482157
+ },
+ {
+  "species": "Salamence-Mega",
+  "spread": "Hasty:2/0/0/32/0/32",
+  "nature": "Hasty",
+  "sp": {
+   "hp": 2,
+   "atk": 0,
+   "def": 0,
+   "spa": 32,
+   "spd": 0,
+   "spe": 32
+  },
+  "weight": 39.6737798974027,
+  "share": 0.04923798735075959
+ },
+ {
+  "species": "Indeedee-F",
+  "spread": "Bold:32/0/32/0/2/0",
+  "nature": "Bold",
+  "sp": {
+   "hp": 32,
+   "atk": 0,
+   "def": 32,
+   "spa": 0,
+   "spd": 2,
+   "spe": 0
+  },
+  "weight": 305.2927710421215,
+  "share": 0.4912759258144954
+ },
+ {
+  "species": "Indeedee-F",
+  "spread": "Relaxed:32/0/32/0/2/0",
+  "nature": "Relaxed",
+  "sp": {
+   "hp": 32,
+   "atk": 0,
+   "def": 32,
+   "spa": 0,
+   "spd": 2,
+   "spe": 0
+  },
+  "weight": 283.9119144830906,
+  "share": 0.4568699355747343
+ },
+ {
+  "species": "Indeedee-F",
+  "spread": "Bold:31/0/32/0/3/0",
+  "nature": "Bold",
+  "sp": {
+   "hp": 31,
+   "atk": 0,
+   "def": 32,
+   "spa": 0,
+   "spd": 3,
+   "spe": 0
+  },
+  "weight": 32.22363001044334,
+  "share": 0.051854138610770234
+ },
+ {
+  "species": "Kommo-o",
+  "spread": "Modest:2/0/0/32/0/32",
+  "nature": "Modest",
+  "sp": {
+   "hp": 2,
+   "atk": 0,
+   "def": 0,
+   "spa": 32,
+   "spd": 0,
+   "spe": 32
+  },
+  "weight": 48.23371511947815,
+  "share": 0.3585818121132549
+ },
+ {
+  "species": "Kommo-o",
+  "spread": "Modest:1/0/0/32/1/32",
+  "nature": "Modest",
+  "sp": {
+   "hp": 1,
+   "atk": 0,
+   "def": 0,
+   "spa": 32,
+   "spd": 1,
+   "spe": 32
+  },
+  "weight": 44.99893463267958,
+  "share": 0.33453362412127474
+ },
+ {
+  "species": "Kommo-o",
+  "spread": "Modest:11/0/1/20/2/32",
+  "nature": "Modest",
+  "sp": {
+   "hp": 11,
+   "atk": 0,
+   "def": 1,
+   "spa": 20,
+   "spd": 2,
+   "spe": 32
+  },
+  "weight": 41.27979201174286,
+  "share": 0.3068845637654703
+ }
+]

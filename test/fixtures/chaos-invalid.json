@@ -1,0 +1,138 @@
+{
+ "info": {
+  "metagame": "gen9championsvgc2026regmcbo3",
+  "cutoff": 1760,
+  "cutoff deviation": 0,
+  "team type": null,
+  "number of battles": 1000
+ },
+ "data": {
+  "Rillaboom": {
+   "Raw count": 262229,
+   "Viability Ceiling": [
+    16006,
+    87,
+    77,
+    63
+   ],
+   "Abilities": {
+    "grassysurge": 369.7492158844417,
+    "overgrow": 0.37647608686069134
+   },
+   "Items": {
+    "miracleseed": 370.1256919713024
+   },
+   "Spreads": {
+    "Sassy:32/0/4/0/30/0": 137.73296986567618,
+    "Adamant:17/31/0/0/10/8": 97.80384009287901,
+    "Adamant:32/25/0/0/0/9": 71.39385052309648,
+    "Adamant:26/15/0/0/6/19": 61.6950314896507,
+    "Adamant:0/0/0/0/0/3": 0,
+    "Adamant:32/32/0/0/2/40": 1.5
+   },
+   "Moves": {},
+   "Tera Types": {
+    "nothing": 370.1256919713024
+   },
+   "Happiness": {
+    "255": 370.1256919713024
+   },
+   "Teammates": {},
+   "Checks and Counters": {},
+   "usage": 0.5409664
+  },
+  "Salamence-Mega": {
+   "Raw count": 137186,
+   "Viability Ceiling": [
+    10755,
+    85,
+    76,
+    63
+   ],
+   "Abilities": {
+    "aerilate": 805.755515853567
+   },
+   "Items": {
+    "salamencite": 805.755515853567
+   },
+   "Spreads": {
+    "Timid:2/0/0/32/0/32": 488.44836720408546,
+    "Timid:1/0/0/32/1/32": 215.803772209538,
+    "Modest:2/0/0/32/0/32": 61.829596542540855,
+    "Hasty:2/0/0/32/0/32": 39.6737798974027
+   },
+   "Moves": {},
+   "Tera Types": {
+    "nothing": 805.755515853567
+   },
+   "Happiness": {
+    "255": 805.755515853567
+   },
+   "Teammates": {},
+   "Checks and Counters": {},
+   "usage": 0.2451423
+  },
+  "Indeedee-F": {
+   "Raw count": 97430,
+   "Viability Ceiling": [
+    8952,
+    84,
+    76,
+    61
+   ],
+   "Abilities": {
+    "psychicsurge": 608.3026197371312,
+    "synchronize": 13.125695798524248
+   },
+   "Items": {
+    "rockyhelmet": 621.4283155356554
+   },
+   "Spreads": {
+    "Bold:32/0/32/0/2/0": 305.2927710421215,
+    "Relaxed:32/0/32/0/2/0": 283.9119144830906,
+    "Bold:31/0/32/0/3/0": 32.22363001044334
+   },
+   "Moves": {},
+   "Tera Types": {
+    "nothing": 621.4283155356554
+   },
+   "Happiness": {
+    "255": 621.4283155356554
+   },
+   "Teammates": {},
+   "Checks and Counters": {},
+   "usage": 0.1299587
+  },
+  "Kommo-o": {
+   "Raw count": 19809,
+   "Viability Ceiling": [
+    1941,
+    85,
+    80,
+    66
+   ],
+   "Abilities": {
+    "soundproof": 129.21029267989277,
+    "bulletproof": 5.302149084007823
+   },
+   "Items": {
+    "leftovers": 134.5124417639006
+   },
+   "Spreads": {
+    "Modest:2/0/0/32/0/32": 48.23371511947815,
+    "Modest:1/0/0/32/1/32": 44.99893463267958,
+    "Modest:11/0/1/20/2/32": 41.27979201174286
+   },
+   "Moves": {},
+   "Tera Types": {
+    "nothing": 134.5124417639006
+   },
+   "Happiness": {
+    "255": 134.5124417639006
+   },
+   "Teammates": {},
+   "Checks and Counters": {},
+   "usage": 0.0665993
+  }
+ }
+}
