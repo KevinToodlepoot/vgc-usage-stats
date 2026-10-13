@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kkopczynski/vgc-usage-stats/schemas/manifest.schema.json",
+  "title": "vgc-usage-stats generation manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "month", "format", "cutoff", "generated_at", "generator", "showdown_sha", "options", "source", "outputs", "quality"],
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "month": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" },
+    "format": { "type": "string", "minLength": 1 },
+    "cutoff": { "type": "integer", "minimum": 0 },
+    "generated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$" },
+    "generator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "commit"],
+      "properties": {
+        "version": { "type": "string" },
+        "commit": { "type": ["string", "null"], "pattern": "^[0-9a-f]{40}$" }
+      }
+    },
+    "showdown_sha": { "type": ["string", "null"], "pattern": "^[0-9a-f]{40}$" },
+    "options": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stats", "summary", "min_share"],
+      "properties": {
+        "stats": { "type": "boolean" },
+        "summary": { "type": "boolean" },
+        "min_share": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "path", "fetched_at", "http_last_modified", "http_etag", "sha256", "bytes"],
+      "properties": {
+        "url": { "type": ["string", "null"] },
+        "path": { "type": ["string", "null"] },
+        "fetched_at": { "type": ["string", "null"] },
+        "http_last_modified": { "type": ["string", "null"] },
+        "http_etag": { "type": ["string", "null"] },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "bytes": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "bytes"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "bytes": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["species", "spreads_parsed", "spreads_rejected", "spreads_dropped_by_floor", "weight_dropped_by_floor", "max_rel_weight_mismatch", "unresolved_species"],
+      "properties": {
+        "species": { "type": "integer", "minimum": 0 },
+        "spreads_parsed": { "type": "integer", "minimum": 0 },
+        "spreads_rejected": { "type": "integer", "const": 0 },
+        "spreads_dropped_by_floor": { "type": "integer", "minimum": 0 },
+        "weight_dropped_by_floor": { "type": "number", "minimum": 0 },
+        "max_rel_weight_mismatch": { "type": "number", "minimum": 0 },
+        "unresolved_species": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
