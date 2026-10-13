@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4VBDN1KJY1W8NG0W50SYF4S",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/cli.ts",
+    "src/index.ts",
+    "src/smogon.ts",
+    "src/stats.ts",
+    "test/cli.test.ts",
+    "test/smogon.test.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 98,
+    "cache_creation_tokens": 17894,
+    "cache_read_tokens": 515754,
+    "output_tokens": 15683,
+    "api_call_count": 4
+  }
+}
