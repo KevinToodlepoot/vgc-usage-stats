@@ -1,0 +1,5 @@
+committed, move to step 7
+
+---
+
+it sounds like we no longer need the ci workflow right? its just a generator that we want to test? its on the user to generate the stats docs and stuff
