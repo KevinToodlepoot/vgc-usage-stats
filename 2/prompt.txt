@@ -1,0 +1,13 @@
+take a look at the DECISIONS.md file in the directory ../vgc-bot. we've discussed a vision for this project and how it will slot into the vgc-bot project. can you tell me where we are at on this repo currently and how the decisions that were made in vgc-bot might influence the design for this repo?
+
+---
+
+I actually think this project would benefit from maybe not actually encoding the stats permanently in the repo but just building a generator/parser for a showdown's monthly chaos file. what do you think of that and would that work? what are the benefits and downsides? im thinking when the bot runs, it can just have a generation step before launch that keeps the spread on disk?
+
+---
+
+will it work well with the vgc-bot design? how will they work together to ensure that this usage stats thing isn't a bottleneck?
+
+---
+
+alright great! update the spec and other docs
