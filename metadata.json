@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4VA2D9CR2WEYRGGV1K6CYRW",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/parse.ts",
+    "test/fixtures/chaos-invalid.json",
+    "test/fixtures/chaos-small.json",
+    "test/fixtures/expected-spreads.json",
+    "test/parse.test.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 194,
+    "cache_creation_tokens": 17212,
+    "cache_read_tokens": 507538,
+    "output_tokens": 14272,
+    "api_call_count": 7
+  }
+}
