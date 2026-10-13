@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/kkopczynski/vgc-usage-stats/schemas/spreads.schema.json",
+  "$id": "https://github.com/KevinToodlepoot/vgc-usage-stats/schemas/spreads.schema.json",
   "title": "vgc-usage-stats spreads file (one species)",
   "type": "object",
   "additionalProperties": false,

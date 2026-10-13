@@ -379,17 +379,23 @@ These were checked on 2026-10-06 against `2026-09` unless noted otherwise.
   - A full month of both formats is about 30 MB gzipped in the cache.
 - [x] 63% of spreads (195k of 309k) in regmc-1760 have weight < 0.001.
 
-### 9.1 Facts to verify during implementation
+### 9.1 Facts verified during implementation (2026-10-13)
 
-- [ ] Reg M-C VGC formats do **not** include Level Clause Mod, so the non-level
-      branch of `statModify` applies. Check the `Flat Rules` expansion at the
-      pinned SHA.
-- [ ] Every chaos species name (Megas, regional formes, `Indeedee-F`, etc.)
-      resolves in the pinned Dex under the `champions` mod.
-- [ ] Parse and write time for regmc-1500 (the largest file) with no floor, and
-      the size of its output directory, so consumers know what a run costs.
-- [ ] Whether Smogon's server honours `If-None-Match` for chaos files, so
-      `--refresh` can be cheap.
+- [x] Reg M-C VGC formats do **not** include Level Clause Mod, so the non-level
+      branch of `statModify` applies. The expanded rule table of
+      `gen9championsvgc2026regmcbo3` at the pin has no `levelclausemod`, checked
+      from inside a Battle.
+- [x] Every chaos species name in regmc-1760 (277) and regmcbo3-1760 (191)
+      resolves in the pinned Dex under the `champions` mod. Only `Farfetch'd` and
+      `Sirfetch'd` differ in display name (Smogon writes a straight apostrophe,
+      Showdown a curly one); lookup still succeeds.
+- [x] regmc-1500 with no floor (316 species, 313,180 spreads, 18.7 MB raw) from
+      the cache: 1.1 s for the core output, 2.5 s with `--summary --stats`. The
+      output directory is 111 MB with both options (72 MB `spreads/`, 39 MB
+      `summary.json`, 72 KB `index.json`). `--min-share 0.001` drops 91% of
+      spreads and the directory is 5.4 MB.
+- [x] Smogon honours `If-None-Match` for chaos files: a `--refresh` with the
+      cached weak ETag (`W/"6abe70d5-1e42b7"`) returns 304.
 
 ## 10. Decisions
 
