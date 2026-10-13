@@ -1,0 +1,5 @@
+read the spec and make a plan for implementing this project. do not overengineer, this should be pretty simple.
+
+---
+
+go ahead, start with step 1
