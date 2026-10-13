@@ -58,8 +58,10 @@ async function runGenerate(v: ReturnType<typeof parse>["values"], log: (s: strin
 
   let stats: StatsDeriver | undefined;
   if (v.stats) {
+    if (v.format.length !== 1) throw new UsageError("--stats takes one --format per invocation");
     const { loadStatsDeriver } = await import("./stats.ts");
-    stats = await loadStatsDeriver();
+    stats = await loadStatsDeriver(v.format[0], log);
+    log(`stats: pokemon-showdown ${stats.showdownSha}`);
   }
 
   for (const format of v.format) {

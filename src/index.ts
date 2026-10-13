@@ -6,3 +6,4 @@ export { summarizeSpecies, buildDist, type SpeciesSummary, type Dist } from "./s
 export { buildSpreadsFile, buildIndexFile, buildSummaryFile, type Target, type SpreadsFile, type IndexFile, type SummaryFile } from "./outputs.ts";
 export { validate, SCHEMA_VERSION, type OutputKind } from "./validate.ts";
 export { GeneratorError, UsageError, NotFoundError, FetchError, ValidationError } from "./errors.ts";
+export { loadStatsDeriver, championsStats, pinnedShowdownSha } from "./stats.ts";
